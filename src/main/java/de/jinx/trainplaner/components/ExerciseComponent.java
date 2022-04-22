@@ -1,32 +1,33 @@
 package de.jinx.trainplaner.components;
 
-import javafx.fxml.FXML;
+import de.jinx.trainplaner.obj.Exercise;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.layout.AnchorPane;
-import javafx.util.Callback;
 
 import java.io.IOException;
 
 public class ExerciseComponent extends AnchorPane {
 
     private Node view;
-    private ExerciseController controller;
+    private ExerciseCompCon controller;
 
-    public ExerciseComponent(){
+    public ExerciseComponent(Exercise übung){
+        //INITILIZATION OF COMPONENT
+        //Loader + Controller
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/de/jinx/trainplaner/exerciseComponent.fxml"));
+        fxmlLoader.setControllerFactory(param -> controller = new ExerciseCompCon());
 
-        fxmlLoader.setControllerFactory(new Callback<Class<?>, Object>() {
-            @Override
-            public Object call(Class<?> param) {
-                return controller = new ExerciseController();
-            }
-        });
+        //load view
         try {
-            view = (Node) fxmlLoader.load();
-
+            view = fxmlLoader.load();
         } catch (IOException ex) {
+            ex.printStackTrace();
         }
+
+        //Do Constructor Items
+        controller.instantiate(übung);
+
         getChildren().add(view);
     }
 }
