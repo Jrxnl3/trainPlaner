@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "name": "Push Up",
+    "info": "Kann ich *noch* nur auf Knien!",
+    "targetedMuscles": [
+      "FOREARM",
+      "CALVE"
+    ],
+    "entries": [
+      {
+        "date": "20210906",
+        "sets": 2,
+        "reps": 10
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Kniebeugen",
+    "info": "Easy Peasy",
+    "targetedMuscles": null,
+    "entries": null
+  },
+  {
+    "id": 2,
+    "name": "Diamond Push Up",
+    "info": "Hilfe :/",
+    "targetedMuscles": null,
+    "entries": null
+  }
+]
