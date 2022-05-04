@@ -57,7 +57,6 @@ public class Model {
             file.write(new Gson().toJson(allExercises));
             file.close();
         } catch (IOException error) {
-            // TODO Auto-generated catch block
             error.printStackTrace();
         }
     }
@@ -87,5 +86,15 @@ public class Model {
 
     public static List<Exercise> getAllExercises() {
         return allExercises;
+    }
+
+    public static int highestID(){
+        int id = 0;
+        for (Exercise e: allExercises) {
+            if(e.getId() >= id){
+                id = e.getId();
+            }
+        }
+        return id + 1;
     }
 }

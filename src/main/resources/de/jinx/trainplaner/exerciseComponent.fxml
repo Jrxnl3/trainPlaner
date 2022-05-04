@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="186.0" prefWidth="600.0" style="-fx-border-color: black; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.jinx.trainplaner.components.ExerciseCompCon">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="186.0" prefWidth="600.0" style="-fx-border-color: black; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.jinx.trainplaner.controllers.ExerciseCompCon">
    <children>
       <Label fx:id="lblName" alignment="CENTER" layoutX="5.0" layoutY="14.0" prefHeight="21.0" prefWidth="572.0" text="ID. Name" textAlignment="CENTER" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
          <font>

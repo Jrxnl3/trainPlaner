@@ -18,6 +18,13 @@ public class Exercise {
         this.targetedMuscles = targetedMuscles;
         this.entries = entries;
     }
+    public Exercise(int id, String name, String info, List<MuscleGroups> targetedMuscles) {
+        this.id = id;
+        this.name = name;
+        this.info = info;
+        this.targetedMuscles = targetedMuscles;
+        this.entries = null;
+    }
     public Exercise(int id, String name, String info) {
         this.id = id;
         this.name = name;

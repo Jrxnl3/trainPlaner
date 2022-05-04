@@ -11,4 +11,6 @@ module de.jinx.trainplaner {
 
     exports de.jinx.trainplaner;
     exports de.jinx.trainplaner.components;
+    exports de.jinx.trainplaner.controllers;
+    opens de.jinx.trainplaner.controllers to javafx.fxml;
 }

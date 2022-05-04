@@ -1,4 +1,4 @@
-package de.jinx.trainplaner.components;
+package de.jinx.trainplaner.controllers;
 
 import de.jinx.trainplaner.obj.Exercise;
 import javafx.event.ActionEvent;

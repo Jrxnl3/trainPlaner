@@ -1,5 +1,6 @@
 package de.jinx.trainplaner.components;
 
+import de.jinx.trainplaner.controllers.ExerciseCompCon;
 import de.jinx.trainplaner.obj.Exercise;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;

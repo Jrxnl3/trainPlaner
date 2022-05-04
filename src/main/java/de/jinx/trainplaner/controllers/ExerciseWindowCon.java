@@ -1,4 +1,4 @@
-package de.jinx.trainplaner.components;
+package de.jinx.trainplaner.controllers;
 
 import de.jinx.trainplaner.obj.Exercise;
 import de.jinx.trainplaner.obj.ExerciseEntry;
@@ -8,16 +8,20 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.time.LocalDate;
 
 public class ExerciseWindowCon {
 
     private Exercise myExercise;
-
-
+    
     @FXML
     private Button btnAdd;
 
@@ -49,8 +53,20 @@ public class ExerciseWindowCon {
     private TableView<ExerciseEntry> tblData;
 
     @FXML
-    void addEntry(ActionEvent event) {
-        //TODO: Open new Window
+    void addEntry(ActionEvent event) throws IOException {
+        /* Add addEntry Window
+        //Create Stage
+        Stage entryStage = new Stage();
+        entryStage.setTitle("Add Entry");
+        //Create view from FXML
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/de/jinx/trainplaner/createExercise.fxml"));
+        //Set view in window
+        entryStage.setScene(new Scene(loader.load()));
+        entryStage.initModality(Modality.APPLICATION_MODAL);
+        //Launch
+        entryStage.show();
+        */
+
     }
 
     @FXML
